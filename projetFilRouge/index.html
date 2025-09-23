@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Streamflix - Films et séries en streaming</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Streamflix est votre plateforme de streaming pour découvrir les dernières nouveautés cinéma, séries populaires et recommandations personnalisées." />
+  <meta name="author" content="Équipe Streamflix" />
+  <meta name="keywords" content="streaming, films, séries, nouveautés, catalogue, plateforme, vidéo à la demande" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <header>
+    <nav role="navigation" aria-label="Navigation principale">
+      <ul>
+        <li>
+          <a href="index.html" aria-current="page">
+            <img src="logo.png" alt="Logo Streamflix" />
+          </a>
+        </li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="series.html">Séries</a></li>
+        <li><a href="ma-liste.html">Ma Liste</a></li>
+      </ul>
+    </nav>
+
+    <aside aria-label="Zone utilisateur">
+      <form action="traitement" method="POST" role="search" aria-label="Recherche de film">
+        <label for="search-film" hidden>Recherchez un film</label>
+        <input type="search" id="search-film" name="film" placeholder="Recherchez votre film" />
+        <input type="submit" value="Envoyer" />
+      </form>
+
+      <nav role="navigation" aria-label="Navigation utilisateur">
+        <ul>
+          <li><a href="mon-profil" aria-label="Accéder à mon profil">Mon profil</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </header>
+
+  <main>
+    <section role="region" aria-labelledby="film-vedette">
+      <h2 id="film-vedette">Film vedette</h2>
+      <img src="images/films/inception.jpg" alt="Affiche du film Inception" />
+
+      <article aria-labelledby="titre-inception-vedette">
+        <h3 id="titre-inception-vedette">Inception</h3>
+        <p>Un voleur qui s'infiltre dans les rêves des autres pour voler leurs secrets découvre qu'il doit réaliser l'impossible : planter une idée plutôt que de la voler.</p>
+        <div role="group" aria-label="Actions disponibles">
+          <button type="button" aria-label="Lire le film Inception">Lire</button>
+          <button type="button" aria-label="Plus d'informations sur Inception">Plus d'infos</button>
+          <button type="button" aria-label="Ajouter Inception à ma liste">Ajouter à ma liste</button>
+        </div>
+        <ul aria-label="Informations sur le film Inception">
+          <li>Année : 2010</li>
+          <li>Durée : 2h28</li>
+          <li>Note : 4.5/5</li>
+          <li>Genres : Sci-Fi, Thriller</li>
+        </ul>
+      </article>
+    </section>
+
+    <section role="region" aria-labelledby="titre-tendances">
+      <h2 id="titre-tendances">Tendances actuelles</h2>
+
+      <article aria-labelledby="titre-dark-knight">
+        <h3 id="titre-dark-knight">The Dark Knight</h3>
+        <p>Le Chevalier Noir affronte le Joker, un criminel imprévisible qui plonge Gotham dans le chaos. Batman doit repousser ses limites pour sauver la ville.</p>
+        <ul aria-label="Informations sur The Dark Knight">
+          <li>Année : 2008</li>
+          <li>Durée : 2h32</li>
+          <li>Note : 4.8/5</li>
+          <li>Genres : Action, Crime, Drama</li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="titre-interstellar-tendances">
+        <h3 id="titre-interstellar-tendances">Interstellar</h3>
+        <p>Un groupe d'explorateurs voyage à travers un trou de ver dans l'espace pour tenter de sauver l'humanité d'une Terre mourante.</p>
+        <ul aria-label="Informations sur Interstellar">
+          <li>Année : 2014</li>
+          <li>Durée : 2h49</li>
+          <li>Note : 4.7/5</li>
+          <li>Genres : Sci-Fi, Drama</li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="titre-pulp-fiction">
+        <h3 id="titre-pulp-fiction">Pulp Fiction</h3>
+        <p>Une série d'histoires entrelacées mêlant gangsters, boxeurs et criminels dans un style narratif non linéaire devenu culte.</p>
+        <ul aria-label="Informations sur Pulp Fiction">
+          <li>Année : 1994</li>
+          <li>Durée : 2h34</li>
+          <li>Note : 4.6/5</li>
+          <li>Genres : Crime, Drama</li>
+        </ul>
+      </article>
+    </section>
+
+    <section role="region" aria-labelledby="titre-recommandees">
+      <h2 id="titre-recommandees">Recommandées pour vous</h2>
+
+      <article aria-labelledby="titre-inception-reco">
+        <h3 id="titre-inception-reco">Inception</h3>
+        <p>Un voleur qui s'infiltre dans les rêves des autres pour voler leurs secrets découvre qu'il doit réaliser l'impossible : planter une idée plutôt que de la voler.</p>
+        <ul aria-label="Informations sur Inception">
+          <li>Année : 2010</li>
+          <li>Durée : 2h28</li>
+          <li>Note : 4.5/5</li>
+          <li>Genres : Sci-Fi, Thriller</li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="titre-matrix">
+        <h3 id="titre-matrix">The Matrix</h3>
+        <p>Un pirate informatique découvre que la réalité dans laquelle il vit est une simulation contrôlée par des machines, et rejoint la résistance pour libérer l'humanité.</p>
+        <ul aria-label="Informations sur The Matrix">
+          <li>Année : 1999</li>
+          <li>Durée : 2h16</li>
+          <li>Note : 4.5/5</li>
+          <li>Genres : Action, Sci-Fi</li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="titre-forrest">
+        <h3 id="titre-forrest">Forrest Gump</h3>
+        <p>L'histoire touchante d'un homme simple au cœur pur qui traverse les grands événements de l'histoire américaine avec innocence et détermination.</p>
+        <ul aria-label="Informations sur Forrest Gump">
+          <li>Année : 1994</li>
+          <li>Durée : 2h22</li>
+          <li>Note : 4.4/5</li>
+          <li>Genres : Drama, Romance</li>
+        </ul>
+      </article>
+    </section>
+
+    <section role="region" aria-labelledby="titre-nouveautes">
+      <h2 id="titre-nouveautes">Nouveautés</h2>
+
+      <article aria-labelledby="titre-interstellar-nouveau">
+        <h3 id="titre-interstellar-nouveau">Interstellar</h3>
+        <p>Un groupe d'explorateurs voyage à travers un trou de ver dans l'espace pour tenter de sauver l'humanité d'une Terre mourante.</p>
+        <ul aria-label="Informations sur Interstellar">
+          <li>Année : 2014</li>
+          <li>Durée : 2h49</li>
+          <li>Note : 4.7/5</li>
+          <li>Genres : Sci-Fi, Drama</li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="titre-dark-knight-nouveau">
+        <h3 id="titre-dark-knight-nouveau">The Dark Knight</h3>
+        <p>Le Chevalier Noir affronte le Joker, un criminel imprévisible qui plonge Gotham dans le chaos. Batman doit repousser ses limites pour sauver la ville.</p>
+        <ul aria-label="Informations sur The Dark Knight">
+          <li>Année : 2008</li>
+          <li>Durée : 2h32</li
