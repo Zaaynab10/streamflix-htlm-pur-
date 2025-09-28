@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding:0;
+    color:black
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+.card{
+        background-color: darkcyan;
+
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
